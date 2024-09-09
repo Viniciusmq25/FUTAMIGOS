@@ -1,0 +1,122 @@
+:root{
+  --bg: #e5e5e5;
+  --letrasP: black;
+  --letrasB: white;
+  --preto: #000;
+  --cor-principal:#d90303;
+}
+
+body{
+  background-color: var(--bg);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.logo{
+  position: absolute;
+  top: .5%;
+  left: 22%;
+  width: 15.5vh;
+}
+
+.div-header{
+  background-color: var(--cor-principal);
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding: .5rem;
+  height: 10vh;
+}
+
+.div-header-cima{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  width: 50%;
+}
+
+.patrocinadores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+}
+
+.patrocinador{
+  width: 5%;
+}
+
+.patrocinador-privacy{
+  height: 7%;
+  width: 16%;
+}
+
+.instagram{
+  width: 24px;
+}
+
+.div-header-baixo{
+  background-color: var(--preto);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-bottom: #777777 solid 3px;
+}
+
+.div-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  color:var(--letrasB);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-right: #777777 solid 3px;
+  padding: .5rem 1rem; 
+}
+
+.div-menu:first-child{
+  border-left: #777777 solid 3px;
+}
+
+.grid1{
+  --gap: 10px;
+  --num-cols: 2;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+  margin: 0 10%;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.grid1 > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid1-col-2{
+  grid-column: span 2;
+}
+
+.grid1-row-2{
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid1{
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
