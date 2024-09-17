@@ -160,13 +160,14 @@ body{
 
 .noticia-1{
   background-size: cover;
-  background-image: url(./img/votacao.jpg);
+  background-position: 0%;
+  background-image: url(./img/mvps.jpeg);
 }
 
 .noticia-2{
   background-size: cover;
   background-position: 0%;
-  background-image: url(./img/lamine.jpeg);
+  background-image: url(./img/proxjogo.jpeg);
 }
 
 .div-texto-noticia{
