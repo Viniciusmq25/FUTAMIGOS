@@ -194,6 +194,7 @@ body{
 .proximo-jogo{
   display: flex;
   justify-content:space-evenly;
+  width: 100%;
   align-items: center;
   margin: 1rem 0;
   padding: 1rem 0;
@@ -268,41 +269,75 @@ body{
 }
 
 .musicas-futamigos{
-  width: 1000px;
+  width: 70%;
   margin: 0 auto;
 }
 
 .audio{
   color-scheme: dark;
+  width: 100%;
 }
 
-.jogador img{
-  object-fit: cover;
-  width: 200px;
-  height: 300px;
+.elenco .slick-prev, .slick-next { /* Ajuste o tamanho conforme necessário */
+  color: #000; /* Ajuste a cor conforme necessário */
+  z-index: 1; /* Garantir que os botões apareçam sobre outros elementos */
+}
 
+.elenco .slick-prev {
+  left: 10px; /* Ajuste a posição do botão anterior */
+}
+
+.elenco .slick-next {
+  right: 10px; /* Ajuste a posição do botão próximo */
 }
 
 .elenco {
-  width: 1500px;
-  margin: 0 auto;
-  padding: 0 .5rem;
-  .slick-track{
-    display: flex;
-  }
-  .slick-slide{
-    opacity: .5;
-    transition: all 0.3s ease;
-    margin-left: 2rem;
-    &.slick-current,
-    &.slick-center {
-        opacity: 1;
-        padding: 3rem 0;
-        transform: scale(1.2);
-    }
-  }
-  
+  width: 70%; /* Ajustar a largura do carrossel para ocupar 100% do contêiner pai */
+  margin: 2rem auto 2rem auto;
+  padding: 0;
+  overflow: hidden;
 }
+
+.jogador {
+  display: flex; /* Garantir que o conteúdo do slide seja flexível */
+  justify-content: center; /* Centralizar o conteúdo dentro do slide */
+  align-items: center; /* Centralizar o conteúdo verticalmente */
+}
+
+.jogador > img {
+  width: 80%; /* Ajustar a largura da imagem para ocupar toda a largura do slide */
+  height: 300px; /* Definir uma altura fixa para a imagem */
+  object-fit: cover; /* Cobrir o slide sem distorcer a imagem */
+}
+
+
+/* Opcional: Ajustar a largura do slide e a margem */
+.elenco .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Ajustar a largura automaticamente */
+  max-width: 100%; /* Garantir que o slide não ultrapasse a largura do contêiner */
+  margin: 0 10px; /* Ajustar a margem */
+  opacity: 0.5; /* Definir a opacidade padrão para os slides fora do centro */
+  transition: opacity 0.3s ease, margin 0.3s ease;
+}
+
+.elenco .slick-slide img {
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.elenco .slick-center{
+  transform: scale(1.2); /* Ajuste o valor conforme necessário para aumentar a imagem */
+  opacity: 1;
+  margin: 0 10px;
+}
+
+.elenco .slick-current {
+  padding: 2rem 0;
+  transition: ease 0.3s;
+}
+
 
 @media screen and (max-width: 1024px) {
   .grid1{
