@@ -4,6 +4,8 @@
   --letrasB: white;
   --preto: #000;
   --cor-principal:#d90303;
+  --cinza: #777777;
+  --tamanho-logo:15.5vh;
 }
 
 body{
@@ -19,7 +21,7 @@ body{
   position: absolute;
   top: .5%;
   left: 22%;
-  width: 15.5vh;
+  width: var(--tamanho-logo);
 }
 
 .div-header{
@@ -63,7 +65,7 @@ body{
   display: flex;
   justify-content:center;
   align-items:center;
-  border-bottom: #777777 solid 3px;
+  border-bottom: var(--cinza) solid 3px;
 }
 
 .div-menu{
@@ -77,12 +79,12 @@ body{
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  border-right: #777777 solid 3px;
+  border-right: var(--cinza) solid 3px;
   padding: .5rem 1rem; 
 }
 
 .div-menu:first-child{
-  border-left: #777777 solid 3px;
+  border-left: var(--cinza) solid 3px;
 }
 
 .conteudo{
@@ -183,6 +185,82 @@ body{
   text-transform: uppercase;
   font-style: italic;
   padding: 0 10px;
+}
+
+.proximo-jogo{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #d90303;
+}
+
+.div-logo-proximo-jogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-logo-proximo-jogo img{
+  width: var(--tamanho-logo);
+}
+
+.adversario{
+  border-radius: 50%;
+}
+
+.div-texto-proximo-jogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-texto-proximo-jogo h1{
+  color: var(--letrasP);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0  0 .5rem 0;
+}
+
+.div-texto-proximo-jogo p, h1{
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.div-texto-proximo-jogo strong{
+  font-size: 20px;
+  margin-bottom: .5rem;
+  color: var(--letrasB);
+}
+
+.div-texto-proximo-jogo p{
+  color: var(--letrasP);
+  font-size: 15px;
+  text-transform:uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.botao-proximo-jogo button{
+  background-color: var(--letrasP);
+  border: none;
+  color: var(--letrasB);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: .6rem 1.3rem;
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  border-radius: 3px;
+}
+
+.botao-proximo-jogo a {
+  text-decoration: none;
+  color: var(--letrasB);
 }
 
 @media screen and (max-width: 1024px) {
