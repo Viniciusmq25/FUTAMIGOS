@@ -295,6 +295,20 @@ body{
   width: 100%;
 }
 
+.elenco-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.elenco-container h1{
+  color: var(--letrasB);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .elenco .slick-prev:before, .elenco .slick-next:before {
   font-size: 50px;
   color: #000; 
