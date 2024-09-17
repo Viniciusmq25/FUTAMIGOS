@@ -8,6 +8,10 @@
   --tamanho-logo:15.5vh;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: var(--bg);
   font-family: "Roboto", sans-serif;
@@ -261,6 +265,43 @@ body{
 .botao-proximo-jogo a {
   text-decoration: none;
   color: var(--letrasB);
+}
+
+.musicas-futamigos{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.audio{
+  color-scheme: dark;
+}
+
+.jogador img{
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
+
+}
+
+.elenco {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 0 .5rem;
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide{
+    opacity: .5;
+    transition: all 0.3s ease;
+    margin-left: 2rem;
+    &.slick-current,
+    &.slick-center {
+        opacity: 1;
+        padding: 3rem 0;
+        transform: scale(1.2);
+    }
+  }
+  
 }
 
 @media screen and (max-width: 1024px) {
