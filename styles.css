@@ -269,6 +269,22 @@ body{
   color: var(--letrasB);
 }
 
+.musicas-futamigos-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--cinza) 1px solid;
+}
+
+.musicas-futamigos-container h1{
+  color: var(--letrasB);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0  0 .5rem 0;
+}
+
 .musicas-futamigos{
   width: 70%;
   margin: 0 auto;
@@ -279,9 +295,10 @@ body{
   width: 100%;
 }
 
-.elenco .slick-prev, .slick-next { /* Ajuste o tamanho conforme necessário */
-  color: #000; /* Ajuste a cor conforme necessário */
-  z-index: 1; /* Garantir que os botões apareçam sobre outros elementos */
+.elenco .slick-prev:before, .elenco .slick-next:before {
+  font-size: 50px;
+  color: #000; 
+  z-index: 1;
 }
 
 .elenco .slick-prev {
@@ -289,7 +306,7 @@ body{
 }
 
 .elenco .slick-next {
-  right: 10px; /* Ajuste a posição do botão próximo */
+  right: 30px; /* Ajuste a posição do botão próximo */
 }
 
 .elenco {
