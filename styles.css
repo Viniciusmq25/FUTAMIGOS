@@ -230,6 +230,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .div-texto-proximo-jogo h1{
@@ -356,6 +357,9 @@ body{
   width: 80%;
   height: 300px;
   object-fit: cover;
+  -webkit-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
 }
 
 .elenco .slick-slide {
@@ -391,6 +395,10 @@ footer{
   gap: 5rem;
   align-items: center;
   padding: 1rem;
+}
+
+footer > div > p{
+  opacity: 0.6;
 }
 
 .footer-patrocinadores{
@@ -477,6 +485,7 @@ footer{
   .footer-patrocinadores{
     flex-direction: column;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -541,6 +550,8 @@ footer{
   
   .elenco{
     width: 90%;
+    border-left: var(--cinza) 0 solid;
+    border-right: var(--cinza) 0 solid;
   }
 
   .elenco .slick-center{
@@ -566,8 +577,16 @@ footer{
     z-index: 2; /* Garantir que o z-index continue alto */
   }
 
+  .elenco .slick-prev:before, .elenco .slick-next:before{
+    color: black;
+  }
+
   .footer-patrocinador-privacy, .footer-patrocinador{
     margin: 0 1rem;
+  }
+
+  footer{
+    gap: 0;
   }
 
 }

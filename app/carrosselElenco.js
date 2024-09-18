@@ -13,7 +13,7 @@ $(document).ready(function() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           slidesToShow: 3,
           swipeToSlide: true,
           centerMode: true, // Manter centerMode ativado para telas maiores
