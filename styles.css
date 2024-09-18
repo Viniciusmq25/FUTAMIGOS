@@ -185,6 +185,7 @@ body {
 .texto-noticia {
   font-size: 15px;
   font-style: italic;
+  color: var(--letrasB);
 }
 
 .proximo-jogo {
