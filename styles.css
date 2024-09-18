@@ -6,6 +6,7 @@
   --cor-principal:#d90303;
   --cinza: #777777;
   --tamanho-logo:15.5vh;
+  --tamanho-logo-mobile:10vh;
 }
 
 html{
@@ -194,7 +195,8 @@ body{
 
 .proximo-jogo{
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
+  gap: 5%;
   width: 100%;
   align-items: center;
   margin: 1rem 0;
@@ -202,14 +204,21 @@ body{
   background-color: #d90303;
 }
 
-.div-logo-proximo-jogo{
+.div-logos-proximo-jogo{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.div-logo-proximo-jogo img{
+.div-logos-proximo-jogo img{
   width: var(--tamanho-logo);
+  margin: 1rem;
+}
+
+.div-logos-proximo-jogo p{
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
 }
 
 .adversario{
@@ -313,9 +322,11 @@ body{
 }
 
 .elenco .slick-prev:before, .elenco .slick-next:before {
+  font-family: 'Font Awesome 5 Free';
   font-size: 50px;
-  color: #000; 
+  color: var(--cinza); 
   z-index: 1;
+  
 }
 
 .elenco .slick-prev {
@@ -327,7 +338,7 @@ body{
 }
 
 .elenco {
-  width: 70%; /* Ajustar a largura do carrossel para ocupar 100% do contêiner pai */
+  width: 70%;
   margin: 2rem auto 2rem auto;
   padding: 0;
   overflow: hidden;
@@ -336,36 +347,34 @@ body{
 }
 
 .jogador {
-  display: flex; /* Garantir que o conteúdo do slide seja flexível */
-  justify-content: center; /* Centralizar o conteúdo dentro do slide */
-  align-items: center; /* Centralizar o conteúdo verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .jogador > img {
-  width: 80%; /* Ajustar a largura da imagem para ocupar toda a largura do slide */
-  height: 300px; /* Definir uma altura fixa para a imagem */
-  object-fit: cover; /* Cobrir o slide sem distorcer a imagem */
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
 }
 
-
-/* Opcional: Ajustar a largura do slide e a margem */
 .elenco .slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto; /* Ajustar a largura automaticamente */
-  max-width: 100%; /* Garantir que o slide não ultrapasse a largura do contêiner */
-  margin: 0 10px; /* Ajustar a margem */
-  opacity: 0.5; /* Definir a opacidade padrão para os slides fora do centro */
+  width: auto;
+  max-width: 100%;
+  margin: 0 10px;
+  opacity: 0.5;
   transition: opacity 0.3s ease, margin 0.3s ease;
 }
 
 .elenco .slick-slide img {
-  transition: transform 0.3s ease; /* Transição suave para o zoom */
+  transition: transform 0.3s ease;
 }
 
 .elenco .slick-center{
-  transform: scale(1.2); /* Ajuste o valor conforme necessário para aumentar a imagem */
+  transform: scale(1.2);
   opacity: 1;
   margin: 0 10px;
 }
@@ -375,10 +384,190 @@ body{
   transition: ease 0.3s;
 }
 
+footer{
+  background-color: #a1a1a1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-patrocinadores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-patrocinador{
+  width: 80px;
+}
+
+.footer-patrocinador-privacy{
+  width: 150px;
+}
+
+.footer-patrocinador-privacy, .footer-patrocinador{
+  margin: 0 1rem;
+  opacity: 0.5;
+}
 
 @media screen and (max-width: 1024px) {
+
+  .conteudo{
+    margin: 0 5%;
+  }
+
+  .logo{
+    position: absolute;
+    top: .5%;
+    left: 15%;
+    width: var(--tamanho-logo);
+  }
+
+  .div-header{
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items:center;
+    padding: .5rem;
+    height: 10vh;
+  }
+
+  .patrocinadores{
+    gap: 5%;
+  }
+
+  .patrocinador{
+    width: 2rem;
+  }
+  
+  .patrocinador-privacy{
+    height: 1rem;
+    width: 5rem;
+  }
+
   .grid1{
     --num-cols: 2;
     --row-height: 300px;
   }
+  .logo{
+    width: var(--tamanho-logo-mobile);
+  }
+
+  .div-logos-proximo-jogo img{
+    width: var(--tamanho-logo-mobile);
+  }
+
+  .proximo-jogo{
+    flex-direction: column;
+  }
+
+  .div-texto-proximo-jogo strong{
+    font-size: 18px;
+  }
+
+  .div-texto-proximo-jogo p{
+    font-size: 14px;
+  }
+
+  .botao-proximo-jogo button{
+    margin-top: 1rem;
+  }
+
+  .footer-patrocinadores{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .space{
+    display: none;
+  }
+
+  .logo{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--tamanho-logo-mobile);
+  }
+
+  .div-header{
+    justify-content: space-between;
+    padding: 0 1rem 2rem 0;
+    }
+
+  .div-header-cima{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 100%;
+  }
+
+  .patrocinadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 0;
+  }
+  
+  .patrocinador{
+    width: 3rem;
+  }
+  
+  .patrocinador-privacy{
+    height: 14%;
+    width: 32%;
+    margin: 0 1rem;
+  }
+
+  .instagram{
+    width: 2rem;
+  }
+
+  .texto-noticia-titulo{
+    font-size: 15px;
+  }
+
+  .texto-noticia{
+    font-size: 12px;
+  }
+
+  .elenco .slick-slide {
+    opacity: 1;
+  }
+  
+  .elenco{
+    width: 90%;
+  }
+
+  .elenco .slick-center{
+    transform: scale(1);
+  }
+
+  .elenco .slick-current{
+    padding: 0;
+  }
+
+  .elenco .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .slick-prev, .slick-next {
+    width: 40px; /* Reduzir o tamanho dos botões em telas menores */
+    height: 40px;
+    z-index: 2; /* Garantir que o z-index continue alto */
+  }
+
+  .footer-patrocinador-privacy, .footer-patrocinador{
+    margin: 0 1rem;
+  }
+
 }
