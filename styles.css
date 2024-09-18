@@ -1,276 +1,239 @@
-:root{
+:root {
   --bg: #770000;
   --letrasP: black;
   --letrasB: white;
   --preto: #000;
-  --cor-principal:#d90303;
+  --cor-principal: #d90303;
   --cinza: #777777;
-  --tamanho-logo:15.5vh;
-  --tamanho-logo-mobile:10vh;
+  --tamanho-logo: 15.5vh;
+  --tamanho-logo-mobile: 10vh;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: var(--bg);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  padding: 0;
   margin: 0;
 }
 
-.logo{
+.logo {
   position: absolute;
-  top: .5%;
+  top: 0.5%;
   left: 22%;
   width: var(--tamanho-logo);
 }
 
-.div-header{
-  background-color: var(--cor-principal);
+.div-header,
+.div-header-baixo {
   display: flex;
-  justify-content:space-evenly;
-  align-items:center;
-  padding: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-header {
+  background-color: var(--cor-principal);
+  justify-content: space-evenly;
+  padding: 0.5rem;
   height: 10vh;
 }
 
-.div-header-cima{
-  display: flex;
-  justify-content:space-around;
-  align-items:center;
+.div-header-cima {
   width: 50%;
+  justify-content: space-around;
 }
 
-.patrocinadores{
+.patrocinadores,
+.div-menu,
+.div-noticias,
+.proximo-jogo,
+.div-logos-proximo-jogo,
+.footer-patrocinadores {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.patrocinadores {
   gap: 8%;
 }
 
-.patrocinador{
+.patrocinador {
   width: 5%;
 }
 
-.patrocinador-privacy{
-  height: 7%;
+.patrocinador-privacy {
   width: 16%;
+  height: 7%;
 }
 
-.instagram{
+.instagram {
   width: 24px;
 }
 
-.div-header-baixo{
+.div-header-baixo {
   background-color: var(--preto);
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  border-bottom: var(--cinza) solid 3px;
+  border-bottom: 3px solid var(--cinza);
 }
 
-.div-menu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu{
-  color:var(--letrasB);
+.menu {
+  color: var(--letrasB);
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  border-right: var(--cinza) solid 3px;
-  padding: .5rem 1rem; 
+  border-right: 3px solid var(--cinza);
+  padding: 0.5rem 1rem;
 }
 
-.div-menu:first-child{
-  border-left: var(--cinza) solid 3px;
+.div-menu:first-child {
+  border-left: 3px solid var(--cinza);
 }
 
-.conteudo{
+.conteudo {
   margin: 0 10%;
 }
 
-.grid1{
+.grid1 {
   --gap: 10px;
   --num-cols: 2;
   --row-height: 350px;
-
-  box-sizing: border-box;
-  padding: var(--gap) 0;
-
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
   grid-auto-rows: var(--row-height);
   gap: var(--gap);
+  padding: var(--gap) 0;
 }
 
-.grid1 > img{
+.grid1 > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  box-shadow: 6px 6px 8px -3px rgba(0, 0, 0, 1);
 }
 
-.img1, .img3{
+.img1,
+.img3 {
   object-position: top;
 }
 
-.grid1-col-2{
+.grid1-col-2 {
   grid-column: span 2;
 }
 
-.grid1-row-2{
+.grid1-row-2 {
   grid-row: span 2;
 }
 
-.noticias{
-  align-items: center;
-  text-align: center;
+.noticias {
   background-color: var(--letrasB);
   padding: 1rem;
+  text-align: center;
   text-transform: uppercase;
-  -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  box-shadow: 6px 6px 8px -3px rgba(0, 0, 0, 1);
 }
 
-.div-noticias{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-align: left;
-}
-
-.noticia{
+.noticia {
   width: 100vh;
   height: 50vh;
   display: flex;
-  justify-content:end;
-  align-items:center;
-  flex-direction: column
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
 }
 
-.noticia-1{
-  background-size: cover;
-  background-position: 0%;
+.noticia-1 {
   background-image: url(./img/mvps.jpeg);
 }
 
-.noticia-2{
-  background-size: cover;
-  background-position: 0%;
+.noticia-2 {
   background-image: url(./img/proxjogo.jpeg);
 }
 
-.div-texto-noticia{
+.noticia-1,
+.noticia-2 {
+  background-size: cover;
+  background-position: 0%;
+}
+
+.div-texto-noticia {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: auto;
 }
 
-.texto-noticia-titulo{
+.texto-noticia-titulo,
+.texto-noticia,
+.div-texto-proximo-jogo h1,
+.div-texto-proximo-jogo p,
+.div-texto-proximo-jogo strong {
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.texto-noticia-titulo,
+.div-texto-proximo-jogo h1,
+.div-texto-proximo-jogo strong {
   color: var(--letrasB);
+}
+
+.texto-noticia-titulo {
   font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0 10px;
 }
 
-.texto-noticia{
-  color: var(--letrasB);
+.texto-noticia {
   font-size: 15px;
-  text-transform: uppercase;
   font-style: italic;
-  padding: 0 10px;
 }
 
-.proximo-jogo{
-  display: flex;
-  justify-content:center;
+.proximo-jogo {
   gap: 5%;
-  width: 100%;
-  align-items: center;
   margin: 1rem 0;
   padding: 1rem 0;
   background-color: #d90303;
 }
 
-.div-logos-proximo-jogo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.div-logos-proximo-jogo img{
+.div-logos-proximo-jogo img {
   width: var(--tamanho-logo);
   margin: 1rem;
 }
 
-.div-logos-proximo-jogo p{
+.div-logos-proximo-jogo p {
   font-size: 30px;
   font-weight: 900;
-  margin: 0;
 }
 
-.adversario{
+.adversario {
   border-radius: 50%;
 }
 
-.div-texto-proximo-jogo{
-  display: flex;
+.div-texto-proximo-jogo {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
-.div-texto-proximo-jogo h1{
-  color: var(--letrasP);
+.div-texto-proximo-jogo h1 {
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 0  0 .5rem 0;
+  margin-bottom: 0.5rem;
 }
 
-.div-texto-proximo-jogo p, h1{
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.div-texto-proximo-jogo strong{
-  font-size: 20px;
-  margin-bottom: .5rem;
-  color: var(--letrasB);
-}
-
-.div-texto-proximo-jogo p{
-  color: var(--letrasP);
+.div-texto-proximo-jogo p {
   font-size: 15px;
-  text-transform:uppercase;
   font-weight: 700;
-  margin: 0;
+  color: var(--letrasP);
 }
 
-.botao-proximo-jogo button{
+.botao-proximo-jogo button {
   background-color: var(--letrasP);
   border: none;
   color: var(--letrasB);
   font-size: 20px;
   text-transform: uppercase;
-  padding: .6rem 1.3rem;
+  padding: 0.6rem 1.3rem;
   cursor: pointer;
-  -webkit-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  -moz-box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
-  box-shadow: 6px 6px 8px -3px rgba(0,0,0,1);
+  box-shadow: 6px 6px 8px -3px rgba(0, 0, 0, 1);
   border-radius: 3px;
 }
 
@@ -303,6 +266,12 @@ body{
   margin: 0 auto;
 }
 
+.musicas-futamigos div{
+  text-align: center;
+  color: var(--letrasB);
+  font-weight: 800;
+}
+
 .audio{
   color-scheme: dark;
   width: 100%;
@@ -323,11 +292,23 @@ body{
 }
 
 .elenco .slick-prev:before, .elenco .slick-next:before {
-  font-family: 'Font Awesome 5 Free';
-  font-size: 50px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
   color: var(--cinza); 
   z-index: 1;
   
+}
+
+.elenco .slick-prev:before{
+  background-image: url(./img/seta.png);
+  transform: scaleX(-1);
+}
+
+.elenco .slick-next:before{
+  background-image: url(./img/seta.png);
 }
 
 .elenco .slick-prev {
@@ -339,12 +320,11 @@ body{
 }
 
 .elenco {
+  height: 400px;
   width: 70%;
   margin: 2rem auto 2rem auto;
   padding: 0;
   overflow: hidden;
-  border-left: var(--cinza) 2px solid;
-  border-right: var(--cinza) 2px solid;
 }
 
 .jogador {
@@ -354,12 +334,9 @@ body{
 }
 
 .jogador > img {
-  width: 80%;
+  width: 70%;
   height: 300px;
   object-fit: cover;
-  -webkit-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
 }
 
 .elenco .slick-slide {
@@ -370,17 +347,18 @@ body{
   max-width: 100%;
   margin: 0 10px;
   opacity: 0.5;
-  transition: opacity 0.3s ease, margin 0.3s ease;
+  transition: opacity 0.3s ease, padding 0.3s ease, transform 0.3s ease;
 }
 
 .elenco .slick-slide img {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, padding 0.3s ease;
 }
 
 .elenco .slick-center{
   transform: scale(1.2);
   opacity: 1;
-  margin: 0 10px;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .elenco .slick-current {
@@ -388,7 +366,13 @@ body{
   transition: ease 0.3s;
 }
 
-footer{
+.elenco .slick-current img{
+  -webkit-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+}
+
+footer {
   background-color: #a1a1a1;
   display: flex;
   justify-content: center;
@@ -397,26 +381,21 @@ footer{
   padding: 1rem;
 }
 
-footer > div > p{
+footer > div > p {
   opacity: 0.6;
 }
 
-.footer-patrocinadores{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-patrocinador {
+  margin: 0 1rem;
 }
 
-.footer-patrocinador{
+.footer-patrocinador {
   width: 80px;
+  opacity: 0.5;
 }
 
 .footer-patrocinador-privacy{
   width: 150px;
-}
-
-.footer-patrocinador-privacy, .footer-patrocinador{
-  margin: 0 1rem;
   opacity: 0.5;
 }
 
@@ -548,10 +527,18 @@ footer > div > p{
     opacity: 1;
   }
   
+  .elenco .slick-current img{
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0  rgba(0,0,0,0);
+  }
+
+  .elenco .slick-current {
+    padding: 0;
+  }
+
   .elenco{
     width: 90%;
-    border-left: var(--cinza) 0 solid;
-    border-right: var(--cinza) 0 solid;
   }
 
   .elenco .slick-center{
@@ -559,7 +546,7 @@ footer > div > p{
   }
 
   .elenco .slick-current{
-    padding: 0;
+    padding: 2rem 0 ;
   }
 
   .elenco .slick-slide {
@@ -569,12 +556,6 @@ footer > div > p{
     width: auto;
     margin: 0;
     max-width: 100%;
-  }
-
-  .slick-prev, .slick-next {
-    width: 40px; /* Reduzir o tamanho dos botões em telas menores */
-    height: 40px;
-    z-index: 2; /* Garantir que o z-index continue alto */
   }
 
   .elenco .slick-prev:before, .elenco .slick-next:before{

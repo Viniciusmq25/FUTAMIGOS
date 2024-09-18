@@ -5,7 +5,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
-    dots: true,
+    dots: false,
     centerMode: true, // Ativar centerMode
     focusOnSelect: true,
     touchThreshold: 100,
