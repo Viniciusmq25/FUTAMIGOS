@@ -145,11 +145,11 @@ body {
 }
 
 .noticia-1 {
-  background-image: url(./img/mvps.jpeg);
+  background-image: url(./assets/img/mvps.jpeg);
 }
 
 .noticia-2 {
-  background-image: url(./img/proxjogo.jpeg);
+  background-image: url(./assets/img/proxjogo.jpeg);
 }
 
 .noticia-1,
@@ -304,12 +304,12 @@ body {
 }
 
 .elenco .slick-prev:before{
-  background-image: url(./img/seta.png);
+  background-image: url(./assets/img/seta.png);
   transform: scaleX(-1);
 }
 
 .elenco .slick-next:before{
-  background-image: url(./img/seta.png);
+  background-image: url(./assets/img/seta.png);
 }
 
 .elenco .slick-prev {

@@ -16,19 +16,19 @@
   <link rel="stylesheet" href="styles.css">
   <title>FutAmigos</title>
 
-  <link rel="icon" href="./img/logo.png">
+  <link rel="icon" href="./assets/img/logo.png">
 </head>
 
 <body>
 
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."headernav.php");?>
   <!-- header -->
+  <div id="header"></div>
 
   <div class="conteudo">
     <div class="grid1">
-      <img class="img1" src="./img/time.jpeg" alt="">
-      <img class="grid1-row-2 img2" src="./img/brito.jpeg" alt="">
-      <img class="img3" src="./img/diadefutamigos.jpeg" alt="">
+      <img class="img1" src="./assets/img/galeria/time.jpeg" alt="">
+      <img class="grid1-row-2 img2" src="./assets/img/galeria/brito.jpeg" alt="">
+      <img class="img3" src="./assets/img/diadefutamigos.jpeg" alt="">
     </div>
 
     <div class="noticias">
@@ -56,9 +56,9 @@
 
   <div class="proximo-jogo" id="proximo-jogo">
     <div class="div-logos-proximo-jogo">
-      <img src="./img/logo.png" alt="logo futamigos">
+      <img src="./assets/img/logo.png" alt="logo futamigos">
       <p>X</p>
-      <img class="adversario" src="./img/adversario.jfif" alt="adversario do futamigos">
+      <img class="adversario" src="./assets/img/adversario.jfif" alt="adversario do futamigos">
     </div>
     <div class="div-texto-proximo-jogo">
       <h1>Próximo jogo</h1>
@@ -74,37 +74,39 @@
   <div class="musicas-futamigos-container">
     <h1>Hinos FutAmigos</h1>
     <div class="musicas-futamigos">
-      <div><audio controls class="audio"><source src="./musicas/hino2.mp3"></audio>Hino 1</div>
-      <div><audio controls class="audio"><source src="./musicas/hino1.mp3"></audio>Hino 2</div>
-      <div><audio controls class="audio"><source src="./musicas/agoravaleu.mp3"></audio>Agora valeu</div>
-      <div><audio controls class="audio"><source src="./musicas/ateas9.mp3"></audio>Até as 9</div>
-      <div><audio controls class="audio"><source src="./musicas/opiniao.mp3"></audio>Não pedi opinião</div>
-      <div><audio controls class="audio"><source src="./musicas/chiesmarcacao.mp3"></audio>Alguém ajuda o Chies</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/hino2.mp3"></audio>Hino 1</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/hino1.mp3"></audio>Hino 2</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/agoravaleu.mp3"></audio>Agora valeu</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/ateas9.mp3"></audio>Até as 9</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/opiniao.mp3"></audio>Não pedi opinião</div>
+      <div><audio controls class="audio"><source src="./assets/musicas/chiesmarcacao.mp3"></audio>Alguém ajuda o Chies</div>
     </div>
   </div>
 
   <div class="elenco-container" id="elenco">
     <h1>Elenco</h1>
     <div class="elenco">
-      <div class="jogador"><img src="./img/jogadores/brito.jfif" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/chico.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/doss.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/neves.jfif" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/pedrinho.png" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/professor do flecha.jfif" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/dalbem.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/dudux.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/mallet.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/nich.jpeg" alt=""></div>
-      <div class="jogador"><img src="./img/jogadores/thomé.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/brito.jfif" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/chico.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/doss.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/neves.jfif" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/pedrinho.png" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/professor do flecha.jfif" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/dalbem.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/dudux.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/mallet.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/nich.jpeg" alt=""></div>
+      <div class="jogador"><img src="./assets/img/jogadores/thomé.jpeg" alt=""></div>
     </div>
   </div>
   
   <!-- footer -->
+   <div id="footer"></div>
 
   <!-- js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./app/carrosselElenco.js"></script>
+  <script src="./app/app.js"></script>
 </body>
 </html>
