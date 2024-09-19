@@ -28,7 +28,8 @@ body {
 }
 
 .div-header,
-.div-header-baixo {
+.div-header-baixo,
+.div-header-cima {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,6 @@ body {
 
 .div-header-cima {
   width: 50%;
-  justify-content: space-around;
 }
 
 .patrocinadores,
@@ -476,7 +476,7 @@ footer > div > p {
 
   .logo{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: var(--tamanho-logo-mobile);
@@ -484,11 +484,12 @@ footer > div > p {
 
   .div-header{
     justify-content: space-between;
-    padding: 0 1rem 2rem 0;
+    padding: 0 1rem 2rem 1rem;
     }
 
   .div-header-cima{
     display: flex;
+    flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
     width: 100%;
@@ -497,7 +498,7 @@ footer > div > p {
   .patrocinadores{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 300px;
     gap: 0;
   }
@@ -513,7 +514,7 @@ footer > div > p {
   }
 
   .instagram{
-    width: 2rem;
+    width: 20px;
   }
 
   .texto-noticia-titulo{

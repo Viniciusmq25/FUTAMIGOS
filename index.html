@@ -20,40 +20,9 @@
 </head>
 
 <body>
-  <header class="header">
 
-    <img src="./img/logo.png" alt="logo futamigos" class="logo">
-
-    <div class="div-header">
-      <div class="div-header-cima">
-
-        <div class="space">
-          <p></p>
-        </div>
-
-        <div class="patrocinadores">
-          <img src="./img/lamafia.png" alt="patrocinador la mafia" class="patrocinador">
-          <img src="./img/logo_privacy.png" alt="" class="patrocinador-privacy">
-          <img src="./img/amstel.png" alt="" class="patrocinador">
-        </div>
-        <div class="redes">
-        <a href="https://www.instagram.com/futamigos.oficial" target="blank">
-          <img src="./img/instagram.png" alt="instagram" class="instagram">
-        </a>
-        </div>
-
-      </div>
-    </div>
-      <div class="div-header-baixo">
-        <div class="div-menu">
-          <a href="" class="menu">galeria</a>
-          <a href="" class="menu">mvps</a>
-          <a href="" class="menu">elenco</a>
-          <a href="#proximo-jogo" class="menu">jogos</a>
-        </div>
-      </div>
-  
-  </header>
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."headernav.php");?>
+  <!-- header -->
 
   <div class="conteudo">
     <div class="grid1">
@@ -114,7 +83,7 @@
     </div>
   </div>
 
-  <div class="elenco-container">
+  <div class="elenco-container" id="elenco">
     <h1>Elenco</h1>
     <div class="elenco">
       <div class="jogador"><img src="./img/jogadores/brito.jfif" alt=""></div>
@@ -131,17 +100,7 @@
     </div>
   </div>
   
-  <footer>
-    <div>
-      <p>Copyright 2024 - Todos os direitos reservados</p>
-      <p>Desenvolvido por: Vinicius Quintian e Lucas Mendes</p>
-    </div>
-    <div class="footer-patrocinadores">
-      <img src="./img/lamafia.png" alt="logo lamafia" class="footer-patrocinador">
-      <img src="./img/logo_privacy.png" alt="logo privacy" class="footer-patrocinador-privacy">
-      <img src="./img/amstel.png" alt="logo amstel" class="footer-patrocinador">
-    </div>
-  </footer>
+  <!-- footer -->
 
   <!-- js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
