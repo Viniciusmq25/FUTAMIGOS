@@ -11,6 +11,8 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -500,6 +502,57 @@ footer > div > p {
     width: 100%;
   }
 
+  .div-header-baixo-mobile{
+    background-color: var(--preto);
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .dropdown button{
+    background-color: var(--preto);
+    color: var(--letrasB);
+    padding: 15px 15px;
+    border: none;
+    background-image: url('./assets/icons8-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .dropdown a{
+    display: block;
+    color: var(--letrasB);
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+  }
+
+  .dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: var(--cor-principal);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
+  }
+
+  .dropdown:hover .content{
+    display: block;
+  }
+
+  .instagram{
+    width: 30px;
+  }
+
+  .redes{
+    display: none;
+  }
+
   .patrocinadores{
     display: flex;
     align-items: center;
@@ -516,10 +569,6 @@ footer > div > p {
     height: 14%;
     width: 32%;
     margin: 0 1rem;
-  }
-
-  .instagram{
-    width: 20px;
   }
 
   .texto-noticia-titulo{
