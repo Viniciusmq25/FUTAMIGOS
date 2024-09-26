@@ -150,12 +150,16 @@ body {
   flex-direction: column;
 }
 
+.div-noticias{
+  gap: 10px;
+}
+
 .noticia-1 {
-  background-image: url(./assets/img/mvps.jpeg);
+  background-image: url(./assets/img/noticia1.jpeg);
 }
 
 .noticia-2 {
-  background-image: url(./assets/img/proxjogo.jpeg);
+  background-image: url(./assets/img/noticia2.jpeg);
 }
 
 .noticia-1,
@@ -512,6 +516,10 @@ footer > div > p {
     display: flex;
     justify-content:space-around;
     align-items:center;
+  }
+
+  .div-noticias{
+    flex-wrap: wrap;
   }
 
   .desktop{
