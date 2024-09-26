@@ -81,6 +81,10 @@ body {
   border-bottom: 3px solid var(--cinza);
 }
 
+div-header-baixo-mobile{
+  display: none;
+}
+
 .menu {
   color: var(--letrasB);
   font-size: 1.2rem;
@@ -503,6 +507,7 @@ footer > div > p {
   }
 
   .div-header-baixo-mobile{
+    display: block;
     background-color: var(--preto);
     display: flex;
     justify-content:space-around;
