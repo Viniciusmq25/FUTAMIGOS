@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.div-mvps {
+  display: flex;
+}
+
+.card{
+  height: 500px;
+  margin: 50px;
+  box-shadow: 10px 10px 21px -2px rgba(0,0,0,0.75);
+  overflow: hidden;
+}
+
+img{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+  transition: .5s;
+  object-fit: cover;
+}
+
+.intro{
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 200px;
+  background: rgb(27, 27, 27, .5);
+  color: white;
+  transition: .5s;
+}
+
+h1{
+  margin: 10px;
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .intro{
+  height: 220px;
+  background: black;
+}
+
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+@media (max-width: 480px) {
+  .div-mvps {
+    grid-template-columns: repeat(5, 1fr); /* Colunas ainda menores para dispositivos muito pequenos */
+    max-width: 95%; /* A largura máxima do grid se ajusta à tela inteira */
+    margin-bottom: 2rem; /* Ajuste a margem para dispositivos muito pequenos */
+  }
+}
