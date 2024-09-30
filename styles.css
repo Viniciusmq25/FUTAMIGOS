@@ -307,14 +307,13 @@ body {
   text-transform: uppercase;
 }
 
-.elenco .slick-prev:before, .elenco .slick-next:before {
+.elenco .slick-prev::before, .elenco .slick-next::before {
   content: "";
   display: block;
   width: 40px;
   height: 40px;
   background-size: contain;
   color: var(--cinza); 
-  z-index: 1;
   
 }
 
@@ -329,6 +328,7 @@ body {
 
 .elenco .slick-prev {
   left: 10px; /* Ajuste a posição do botão anterior */
+  z-index: 999;
 }
 
 .elenco .slick-next {
@@ -345,14 +345,37 @@ body {
 
 .jogador {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.div-nome-jogador{
+  position: relative;
+  max-width: 100px;
+  bottom: 25px;
+  text-align: center;
+  padding: .3rem 1rem;
+  border-radius: 3px;
+  background: linear-gradient(to bottom left, var(--cor-principal) 40%, var(--cinza) 100%);
+}
+
+.nome-jogador{
+  color: var(--letrasB);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .jogador > img {
   width: 70%;
   height: 300px;
   object-fit: cover;
+  overflow: hidden;
+  object-position: 25% 25%; 
 }
 
 .elenco .slick-slide {
