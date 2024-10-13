@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
     this.innerHTML = `
       <header class="header">
 
-      <a href="./index.html"><img src="./assets/img/logo.png" alt="logo futamigos" class="logo"></a>
+      <a href="./index.html"><img src="./assets/logo.jpg" alt="logo futamigos" class="logo"></a>
 
       <div class="div-header">
         <div class="div-header-cima">
