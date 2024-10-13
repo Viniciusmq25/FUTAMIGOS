@@ -26,7 +26,7 @@ class SpecialHeader extends HTMLElement {
             <a href="./galeria.html" class="menu">galeria</a>
             <a href="./mvps.html" class="menu">mvps</a>
             <a href="./index.html#elenco" class="menu">elenco</a>
-            <a href="./index.html#proximo-jogo" class="menu">jogos</a>
+            <a href="./jogos.html" class="menu">jogos</a>
           </div>
         </div>
 

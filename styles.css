@@ -308,22 +308,29 @@ body {
   text-transform: uppercase;
 }
 
-.elenco .slick-prev::before, .elenco .slick-next::before {
+.slick-prev::before, .slick-next::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 40px;
   background-size: contain;
   color: var(--cinza); 
-  
 }
 
-.elenco .slick-prev:before{
+.musicas-futamigos .slick-prev::before, .musicas-futamigos .slick-next::before{
+  width: 20px;
+  height: 20px;
+}
+
+.elenco .slick-prev::before, .elenco .slick-next::before{
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before{
   background-image: url(./assets/img/seta.png);
   transform: scaleX(-1);
 }
 
-.elenco .slick-next:before{
+.slick-next:before{
   background-image: url(./assets/img/seta.png);
 }
 
